@@ -7,10 +7,18 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <NavBar />
+      <BrowserRouter>
+        <NavBar />
 
-      <ItemListContainer greeting={"Bienvenido a mi ecommerce"} />
-      <ItemDetailContainer />
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <ItemListContainer greeting={"Bienvenido a mi ecommerce"} />
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
