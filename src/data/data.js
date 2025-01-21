@@ -1,6 +1,6 @@
 const products = [
   {
-    id: 1,
+    id: "123d",
     name: "Body Lotion",
     price: 15000,
     stock: 20,
@@ -32,7 +32,7 @@ const getProducts = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       resolve(products);
-    }, 3000);
+    }, 2000);
   });
 };
 
