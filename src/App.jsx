@@ -13,11 +13,18 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={
-              <ItemListContainer greeting={"Bienvenido a mi ecommerce"} />
-            }
+            element={<ItemListContainer greeting={"Dolce Incanto"} />}
+          />
+          <Route
+            path="/category/:idCategory"
+            element={<ItemListContainer greeting={"Dolce Incanto"} />}
+          />
+          <Route
+            path="/detail/:idProduct"
+            element={<ItemDetailContainer greeting={"Dolce Incanto"} />}
           />
         </Routes>
+        <ItemDetailContainer />
       </BrowserRouter>
     </div>
   );
